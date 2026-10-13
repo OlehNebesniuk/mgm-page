@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МЖМ / Місце Живого Маразму</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .bg-custom {
+      background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), 
+                        url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="bg-custom text-white min-h-screen flex flex-col items-center justify-between p-4 font-sans">
+
+  <main class="w-full max-w-md my-auto pt-6 pb-12 flex flex-col items-center">
+    
+    <!-- Шапка: Круглий Аватар МЖМ -->
+    <div class="flex flex-col items-center text-center mb-8">
+      
+      <!-- Збільшений контейнер -->
+      <div class="relative w-40 h-40 mb-4 rounded-full p-1 bg-gradient-to-tr from-cyan-400 to-fuchsia-500 shadow-xl overflow-hidden bg-slate-900">
+        <!-- object-cover розтягне картинку на весь круг без чорних боків -->
+        <img id="avatar" src="mgm-logo.png" alt="МЖМ — Місце Живого Маразму" class="w-full h-full object-cover rounded-full">
+      </div>
+      
+      <h1 class="text-2xl font-bold tracking-wide">МЖМ / Місце Живого Маразму</h1>
+      <p class="text-slate-300 text-sm mt-1 max-w-xs">Імпровізаційне скетч шоу, в якому Ви наш сценарист</p>
+    </div>
+
+    <!-- Основні Посилання -->
+    <div class="w-full space-y-4">
+      
+      <!-- Кнопка: Гугл форма (Купити квитки) -->
+      <a href="https://docs.google.com/forms/d/1s_pS7Z-FrmK8nuJyNdOxzQ0JV8NnTne7ZjmlY_EvRe4/edit" target="_blank" class="w-full flex items-center justify-between p-4 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 rounded-2xl shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 border border-emerald-400/30">
+        <div class="flex items-center space-x-3">
+          <i class="fa-solid fa-file-lines text-xl"></i>
+          <span class="font-semibold text-base">Купити квитки</span>
+        </div>
+        <i class="fa-solid fa-chevron-right text-sm opacity-70"></i>
+      </a>
+
+      <!-- Кнопка: Instagram -->
+      <a href="https://instagram.com" target="_blank" class="w-full flex items-center justify-between p-4 bg-slate-800/80 hover:bg-slate-700/80 backdrop-blur-md rounded-2xl border border-slate-700 shadow-md transition-all duration-300 transform hover:-translate-y-0.5">
+        <div class="flex items-center space-x-3">
+          <i class="fa-brands fa-instagram text-fuchsia-400 text-xl"></i>
+          <span class="font-medium">Instagram</span>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"></i>
+      </a>
+
+      <!-- Кнопка: Telegram -->
+      <a href="https://t.me" target="_blank" class="w-full flex items-center justify-between p-4 bg-slate-800/80 hover:bg-slate-700/80 backdrop-blur-md rounded-2xl border border-slate-700 shadow-md transition-all duration-300 transform hover:-translate-y-0.5">
+        <div class="flex items-center space-x-3">
+          <i class="fa-brands fa-telegram text-sky-400 text-xl"></i>
+          <span class="font-medium">Telegram Канал</span>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"></i>
+      </a>
+
+    </div>
+
+  </main>
+
+  <footer class="text-xs text-slate-400 py-4">
+    © 2026 МЖМ. Всі права захищені
+  </footer>
+
+</body>
+</html>
